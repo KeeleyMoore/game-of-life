@@ -4,6 +4,7 @@ Attempt game of life challenge, with experiments and controls
 
 Features:
   - Presets
+    * Preset Boards and shapes to add to existing board
     * drop down with rendered preview
   - Area on/off/invert
   - Speed control

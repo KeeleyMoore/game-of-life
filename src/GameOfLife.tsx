@@ -3,8 +3,8 @@ import { FC } from 'react';
 import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { Box, ThemeProvider } from '@mui/material';
 
-import { Board } from './board';
 import { Header } from './components';
+import { GameState } from './game';
 
 const theme = responsiveFontSizes(createTheme({
   palette: {
@@ -26,7 +26,7 @@ const GameOfLife: FC = () => (
   <ThemeProvider theme={theme}>
     <Box sx={{ bgcolor: 'background.default', minHeight: '100vh' }}>
       <Header />
-      <Board boardSize={35} />
+      <GameState />
     </Box>
   </ThemeProvider>
 );
